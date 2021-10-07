@@ -1,0 +1,81 @@
+# for font and some text format
+snippet bd "bold text"
+**${1:text}**
+endsnippet
+
+snippet kbd "enter a keyboard button" 
+<kbd>${1:key}</kbd>$0
+endsnippet
+
+snippet anc "anchor"
+<a name='${1:show}'></a>$0
+endsnippet
+
+# text format for mermaid
+snippet cb "codeblock" b
+\`\`\`$1
+${2:code}
+\`\`\`
+$0
+endsnippet
+
+snippet mmd "mermaid in html"
+<body>
+	<div class='mermaid'>
+		${1:code text}
+	</div>
+	<script>
+		${2:config}
+	</script>
+</body>
+$0
+endsnippet
+
+# some formats for tex math formula
+snippet fil "formula in line" 
+\$${1:tex formula}\$ $0
+endsnippet
+
+snippet fol "formula out of line" 
+\$\$ 
+${1:tex formula}
+\$\$
+$0
+endsnippet
+
+snippet frac "input a fraction symbol" 
+\frac\{${1:up}\}\{${2:down}\}$0
+endsnippet
+
+snippet C "arrange formula"
+C_\{${1:down}}^\{${2:up}\}$0
+endsnippet
+
+# some special text snippets for specilized files
+# for review of each paper
+snippet review "review for papers" 
+## ${1:titile keywords, author year}
+- keywords: $2
+- problem to solve: $3
+- methods: $4
+- main conclusion: $5
+- advantages and innovation: $6
+- drawbacks: $7
+- to be advanced: $0
+endsnippet
+
+snippet pfc "paper flowchart"
+\`\`\`mermaid
+flowchart LR
+	subgraph observations
+		${1:observation from and data types}
+	end
+	subgraph analysis
+		${2:data analysis from observations}
+	end
+	subgraph physics
+		${3:physics process from data and analysis}
+	end
+	${4:the link between each column}
+\`\`\`
+endsnippet

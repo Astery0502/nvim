@@ -1,0 +1,35 @@
+{
+    "coc.preferences.extensionUpdateCheck": "weekly",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "json",
+        "vim",
+        "python"
+    ],
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
+    "suggest.autoTrigger": "always",
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.enablePreview": true,
+    "suggest.floatEnable": true,
+    "suggest.detailField": "preview",
+    "codeLens.enable": true,
+    "snippets.ultisnips.directories": [
+        "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/",
+        "$HOME/.config/nvim/plugged/vim-snippets/snippets/",
+        "$HOME/.config/nvim/snippets/"
+    ],
+    "coc.preferences.formatOnTypeFiletypes": [
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "json",
+        "java",
+        "python"
+    ],
+    "pyright.enable": true,
+    "python.analysis.autoImportCompletions": true,
+    "pyright.disableDiagnostics": false,
+    "pyright.completion.snippetSupport": true,
+    "pyright.organizeimports.provider": "pyright"
+}
