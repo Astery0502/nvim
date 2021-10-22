@@ -3,7 +3,9 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "json",
         "vim",
-        "python"
+        "python",
+        "markdown",
+        "latex"
     ],
     "suggest.noselect": true,
     "suggest.enablePreselect": false,

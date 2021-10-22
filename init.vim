@@ -26,6 +26,8 @@ set number	" number the line
 set showmatch	" highlight matching {}[]()
 set novisualbell	" no flashbell
 set noeb	" no errorbell
+set bo " belloff
+set vb t_vb= " completely turn off the bell
 set sc		" show command 
 set gdefault	" do with the whole line by defualt
 set cul	" show cursorline of the current line 
@@ -101,6 +103,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'dhruvasagar/vim-table-mode'
 " preview the markdown on browser
 " Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" nvim filetype and syntax plugins for latex files
+Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install' }
 " colortheme monokai
 Plug 'crusoexia/vim-monokai'
